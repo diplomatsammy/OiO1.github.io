@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Olowoeyo Israel Olalekan</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="styles.css" />
+ <link rel="icon" type="image/x-icon" href="images/favicon.png" />
+</head>
+<body class="relative overflow-hidden bg-[#050B1E]">
+
+  <!-- Background Effects -->
+  <canvas id="aiCanvas" class="absolute top-0 left-0 w-full h-full z-0"></canvas>
+
+  <!-- Responsive Header -->
+<header class="relative z-30 w-full px-6 py-4 flex items-center justify-between ">
+
+
+<!-- Desktop Menu -->
+<nav class="pt-10 hidden md:flex absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 space-x-8 text-white font-medium">
+  <a href="index.html" class="hover:text-sky-400 transition">Home</a>
+  <a href="projects.html" class="hover:text-sky-400 transition">Projects</a>
+  <a href="https://olowoeyoisraelolalekan.com" class="hover:text-sky-400 transition">Agency</a>
+  <a href="services.html" class="hover:text-sky-400 transition">Services</a>
+  <a href="about.html" class="hover:text-sky-400 transition">About</a>
+  <a href="contact.html" class="hover:text-sky-400 transition">Contact</a>
+</nav>
+
+
+<!-- Mobile Toggler (Centered OiO + hint) -->
+<div class="md:hidden flex flex-col items-center w-full mt-2 mt-[-10px]">
+  <div id="menuToggle" class="text-3xl font-extrabold cursor-pointer hover:scale-110 transition duration-300">
+    <span class="text-white">O</span><span class="text-sky-400">i</span><span class="text-white">O</span>
+  </div>
+  <p class="text-xs text-sky-300 mt-1">Tap to open menu</p>
+</div>
+
+</header>
+
+<!-- Mobile Menu -->
+<div id="mobileMenu" class="hidden md:hidden fixed top-0 left-0 w-full h-screen bg-[#050B1E] text-white text-center py-6 space-y-4 z-40">
+  <!-- OiO inside menu for closing -->
+  <div id="menuClose" class="text-3xl font-extrabold cursor-pointer hover:scale-110 transition duration-300">
+    <span class="text-white">O</span><span class="text-sky-400">i</span><span class="text-white">O</span>
+    <p class="text-xs mt-1 text-sky-300">Close</p>
+  </div>
+
+  <a href="index.html" class="block py-4 hover:bg-sky-500/20 transition">Home</a>
+  <a href="projects.html" class="block py-4 hover:bg-sky-500/20 transition">Projects</a>
+  <a href="https://olowoeyoisraelolalekan.com" class="block py-4 hover:bg-sky-500/20 transition">Agency</a>
+  <a href="services.html" class="block py-4 hover:bg-sky-500/20 transition">Services</a>
+  <a href="about.html" class="block py-4 hover:bg-sky-500/20 transition">About</a>
+  <a href="contact.html" class="block py-4 hover:bg-sky-500/20 transition">Contact</a>
+</div>
+
+
+
+
+ <!-- Main Content -->
+<div class="observe opacity-0  mt-[-150px] md:mt-[-60px] relative z-10 flex flex-col md:flex-row items-center justify-center min-h-screen text-white px-6 py-16 gap-10">
+
+  <!-- Text Content -->
+  <div class="md:w-1/2 text-center md:text-left pt-8">
+    <h1 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 md:pl-10">
+      Hi, I'm <span class="text-sky-400 whitespace-nowrap">Olowoeyo Israel Olalekan</span>
+    </h1>
+
+    <p class="text-sm sm:text-base md:text-lg text-gray-300 mb-6 max-w-xl md:pl-10">
+      A full-stack developer building modern, intelligent web experiences with a touch of AI.
+    </p>
+
+    <!-- Profile Image (moved here for mobile order) -->
+    <div class="observe opacity-0 flex justify-center md:hidden relative mb-6">
+      <!-- Glowing Circle -->
+      <div class="w-44 h-44 bg-sky-500 blur-3xl opacity-30 rounded-full absolute bottom-0"></div>
+      <img src="images/israel1.png" alt="Israel"
+           class="relative z-10 w-44 h-44 rounded-full shadow-2xl object-cover -mt-10" />
+    </div>
+
+    <!-- Buttons -->
+    <div class="flex flex-wrap justify-center md:justify-start gap-4 md:pl-10">
+      <a href="contact.html" class="px-5 py-2 bg-sky-500 hover:bg-sky-600 rounded-full text-white font-medium transition">
+        Hire Me
+      </a>
+      <a href="projects.html" class="px-5 py-2 border border-sky-400 text-sky-400 hover:bg-sky-500 hover:text-white rounded-full transition">
+        Projects
+      </a>
+      <a href="resume.pdf" class="px-5 py-2 border border-white text-white hover:bg-white hover:text-black rounded-full transition">
+        Resume
+      </a>
+    </div>
+  </div>
+
+  <!-- Profile Image (Desktop only) -->
+  <div class="observe opacity-0 hidden md:flex md:w-1/2 justify-center relative mt-10 md:mt-0">
+    <div class="w-52 h-52 sm:w-60 sm:h-60 md:w-72 md:h-72 bg-sky-500 blur-3xl opacity-30 rounded-full absolute bottom-0"></div>
+    <img src="images/israel1.png"
+         alt="Israel"
+         class="relative z-10 w-60 h-60 sm:w-64 sm:h-64 md:w-72 md:h-72 lg:w-80 lg:h-80 rounded-full shadow-2xl object-cover -mt-12" />
+  </div>
+</div>
+
+
+  <!-- Experience Counter Section -->
+<div class="experience-section absolute top-[75vh] observe opacity-0 px-6 ml-[-30px] sm:ml-0">
+
+  <div class="grid grid-cols-4 sm:grid-cols-2 md:grid-cols-4 gap-6 text-center text-white">
+
+    <!-- Experience -->
+    <div class="counter-item">
+      <div style="width: 70px; height: 90px;"  class="w-24 h-24 mx-auto rounded-full bg-white text-[#000135] flex items-center justify-center text-2xl font-bold">
+        <span class="count" data-target="10">0</span>+
+      </div>
+      <h3 class="mt-4 text-lg md:text-xl font-bold text-sky-400 mt-[-5px]">Years of Experience</h3>
+    </div>
+
+    <!-- Projects -->
+    <div class="counter-item">
+      <div style="width: 70px; height: 90px;"  class="w-24 h-24 mx-auto rounded-full bg-white text-[#000135] flex items-center justify-center text-2xl font-bold">
+        <span class="count" data-target="50">0</span>+
+      </div>
+      <h3 class="mt-4 text-lg md:text-xl font-bold text-sky-400 mt-[-5px]">Projects Completed</h3>
+    </div>
+
+    <!-- Partnerships -->
+    <div class="counter-item">
+      <div style="width: 70px; height: 90px;"  class="w-24 h-24 mx-auto rounded-full bg-white text-[#000135] flex items-center justify-center text-2xl font-bold">
+        <span class="count" data-target="30">0</span>+
+      </div>
+      <h3 class="mt-4 text-lg md:text-xl font-bold text-sky-400 mt-[-5px]">Successful Partnerships</h3>
+    </div>
+
+    <!-- Team Collaborations -->
+    <div class="counter-item">
+      <div style="width: 70px; height: 90px;"  class="w-24 h-24 mx-auto rounded-full bg-white text-[#000135] flex items-center justify-center text-2xl font-bold">
+        <span class="count" data-target="60">0</span>+
+      </div>
+      <h3 class="mt-4 text-lg md:text-xl font-bold text-sky-400 mt-[-5px]">Team Collaborations</h3>
+    </div>
+
+  </div>
+</div>
+
+
+
+  <script>
+ const canvas = document.getElementById("aiCanvas");
+const ctx = canvas.getContext("2d");
+
+let width, height;
+function resize() {
+  width = canvas.width = window.innerWidth;
+  height = canvas.height = window.innerHeight;
+}
+resize();
+window.addEventListener("resize", resize);
+
+// AI Tree Lines + Dot
+const branches = [];
+for (let i = 0; i < 80; i++) {
+  const x = Math.random() * width;
+  const y = Math.random() * height;
+  const length = Math.random() * 100 + 50;
+  const angle = Math.random() * 2 * Math.PI;
+  branches.push({ x, y, length, angle, offset: 0 });
+}
+
+function draw() {
+  ctx.clearRect(0, 0, width, height);
+
+  ctx.strokeStyle = "rgba(0, 200, 255, 0.2)";
+  ctx.lineWidth = 1;
+
+  branches.forEach(branch => {
+    const { x, y, length, angle, offset } = branch;
+    const x2 = x + Math.cos(angle) * length;
+    const y2 = y + Math.sin(angle) * length;
+
+    ctx.beginPath();
+    ctx.moveTo(x, y);
+    ctx.lineTo(x2, y2);
+    ctx.stroke();
+
+    // Moving Dot
+    const dotX = x + Math.cos(angle) * (offset % length);
+    const dotY = y + Math.sin(angle) * (offset % length);
+    ctx.fillStyle = "rgba(0, 255, 255, 0.8)";
+    ctx.beginPath();
+    ctx.arc(dotX, dotY, 2, 0, Math.PI * 2);
+    ctx.fill();
+
+    branch.offset += 0.3; // dot speed
+  });
+
+  requestAnimationFrame(draw);
+}
+
+draw();
+
+
+const observer = new IntersectionObserver((entries, obs) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.remove('opacity-0');
+      entry.target.classList.add('slide-up');
+
+      // Start count animation
+      const counters = entry.target.querySelectorAll('.count');
+      counters.forEach(counter => {
+        counter.innerText = '0';
+        const target = +counter.getAttribute('data-target');
+        const increment = Math.ceil(target / 60);
+
+        const updateCounter = () => {
+          const current = +counter.innerText;
+          if (current < target) {
+            counter.innerText = `${Math.min(current + increment, target)}`;
+            setTimeout(updateCounter, 30);
+          }
+        };
+        updateCounter();
+      });
+
+      obs.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.2 });
+
+document.querySelectorAll('.observe').forEach(el => observer.observe(el));
+
+
+  const toggleBtn = document.getElementById('menuToggle');
+  const closeBtn = document.getElementById('menuClose');
+  const menu = document.getElementById('mobileMenu');
+
+  toggleBtn.addEventListener('click', () => {
+    menu.classList.toggle('hidden');
+  });
+
+  closeBtn.addEventListener('click', () => {
+    menu.classList.add('hidden');
+  });
+
+  // Optional: Close on link click
+  document.querySelectorAll('#mobileMenu a').forEach(link => {
+    link.addEventListener('click', () => {
+      menu.classList.add('hidden');
+    });
+  });
+  </script>
+
+
+ 
+  
+
+</body>
+</html>
